@@ -103,6 +103,46 @@ h2{
     margin-left: 1rem;
    }
 
-   
+   /* page style end */
+
+   .end-form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+
+   }
+
+
+   input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border-radius: 4px;
+    box-shadow: 0 0.1rem 1.4rem 0 blueviolet;
+   }
+
+   input::placeholder{
+    color: #aaa;
+   }
+   #username{
+    margin-bottom: 3rem;
+    width: 100%
+    
+   }
+
+   #end-text{
+    font-size: 2.4rem;
+    color: black;
+    text-align: center;
+   }
+
+
+   #saveScoreBtn{
+    border: none;
+    
+   }
 
     

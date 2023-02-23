@@ -50,21 +50,21 @@ let questions = [
 
 
  const MAX_QUESTIONS = 4
- const DECREMENT_TIME = -10
+ const DECREMENT_TIME = +10
   
- 
+ let count = 60;
 
 
 
  startGame = () => {
-    let count = 60;
+     count = 60;
     let timerInterval = setInterval(() => {
         timerEl.textContent = count;
         count--;
         if (count < 0) {
             clearInterval(timerInterval);
             localStorage.setItem('mostRecentTime', 0);
-            return window.location.assign('/end.html');
+            return window.location.assign('end.html');
         }
     }, 1000);
 
@@ -75,12 +75,13 @@ let questions = [
 }
 
 decreaseTime = num => {
-    timer -= num;
+    count = 60;
+    timerEl += num;
     if (timer < 0) {
         timer = 0;
     }
     // update the timer element
-    timer.textContent = timer;
+    timerEl.textContent = timer;
 }
 
 
@@ -136,12 +137,12 @@ choices.forEach(choice => {
          })
     
 })
-decreaseTime = num => {
-    timer +=num
+
+// decreaseTime = num => {
+    // timer +=num
     
-}
 
 
-startGame()
+startGame();
 
 
