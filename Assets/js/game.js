@@ -8,7 +8,7 @@ let currentQuestion = {}
 let acceptingAnswers = true
 let questionCounter = 0
 let availableQuestions =[]
-// let timer = 0
+ let timer = 0
 let questions = [
     {
     question:  'Inside which HTML element do we put the JavaScript?' ,
@@ -63,7 +63,7 @@ let questions = [
         count--;
         if (count < 0) {
             clearInterval(timerInterval);
-            localStorage.setItem('mostRecentTime', 0);
+            localStorage.setItem('mostRecentScore', 0);
             return window.location.assign('end.html');
         }
     }, 1000);
@@ -75,21 +75,21 @@ let questions = [
 }
 
 decreaseTime = num => {
-    count = 60;
-    timerEl += num;
-    if (timer < 0) {
-        timer = 0;
+    
+    count -= num;
+    if (count < 0) {
+        count = 0;
     }
     // update the timer element
-    timerEl.textContent = timer;
+    count.textContent = timer;
 }
 
 
 getNewQuestion = () => {
 if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS){
-    localStorage.setItem('mostRecentTime', timer)
+    localStorage.setItem('mostRecentScore', timer)
 
-    return window.location.assign('/end.html')
+    return window.location.assign('end.html')
 }
 
 questionCounter++
