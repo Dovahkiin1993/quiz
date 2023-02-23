@@ -3,8 +3,7 @@ const choices = Array.from(document.querySelectorAll(".choice-text"))
 const progressText = document.querySelector("#progressText")
 // const scoreText = document.querySelector("#hud-prefix")
 const progressBarFull = document.querySelector("#progressBarFull")
-var  timer = document.querySelector("#hud-prefix")
-
+var  timerEl = document.querySelector("#timer")
 let currentQuestion = {}
 let acceptingAnswers = true
 let questionCounter = 0
@@ -51,7 +50,7 @@ let questions = [
 
 
  const MAX_QUESTIONS = 4
- const DECREMENT_TIME = 10
+ const DECREMENT_TIME = -10
   
  
 
@@ -60,7 +59,7 @@ let questions = [
  startGame = () => {
     let count = 60;
     let timerInterval = setInterval(() => {
-        timer.textContent = count;
+        timerEl.textContent = count;
         count--;
         if (count < 0) {
             clearInterval(timerInterval);
@@ -144,7 +143,5 @@ decreaseTime = num => {
 
 
 startGame()
-
-
 
 
