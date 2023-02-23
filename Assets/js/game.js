@@ -63,7 +63,7 @@ let questions = [
         count--;
         if (count < 0) {
             clearInterval(timerInterval);
-            localStorage.setItem('mostRecentScore', 0);
+            localStorage.setItem('timer', );
             return window.location.assign('end.html');
         }
     }, 1000);
@@ -87,7 +87,7 @@ decreaseTime = num => {
 
 getNewQuestion = () => {
 if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS){
-    localStorage.setItem('mostRecentScore', timer)
+    localStorage.setItem('timer', count)
 
     return window.location.assign('end.html')
 }
