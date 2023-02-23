@@ -9,12 +9,14 @@ const MAX_HIGH_SCORES = 4
 
 finalScore.innerText = mostRecentScore
 
-username.addEventListener('keyup', () =>{
-    saveScoreBtn = username.value
+saveScoreBtn.addEventListener('click', (event) =>{
+    event.preventDefault()
+    saveHighScore()
+    localStorage.setItem('highScores', JSON.stringify(highScores))
 })
 
-savehighScore = e =>{
-    e.preventDefault()
+saveHighScore = e =>{
+    // e.preventDefault()
 
     const score = {
         score:mostRecentScore,
@@ -31,5 +33,5 @@ savehighScore = e =>{
 
 highScores.splice(4)
 
-localStorage.setItem('highScores', JSON.stringify(highScores))
-window.location.assign('end.html')
+// localStorage.setItem('highScores', JSON.stringify(highScores))
+

@@ -80,7 +80,7 @@ decreaseTime = num => {
     if (count < 0) {
         count = 0;
     }
-    // update the timer element
+    
     count.textContent = timer;
 }
 
@@ -138,8 +138,6 @@ choices.forEach(choice => {
     
 })
 
-// decreaseTime = num => {
-    // timer +=num
     
 
 
