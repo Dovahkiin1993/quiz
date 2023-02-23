@@ -2,7 +2,9 @@
 
 ## My Task
 
-It was my task this week to complete the following user story and complete the acceptance criteria. I had to create a quiz about java script that was timed and every time a wrong answer was selected by the user the timer decreases by 10 seconds. At the end of the quiz you can enter your initials and save your score on the leader board. i have included i link to the deployed site and a image of what the site looks like.![quiz pic](https://user-images.githubusercontent.com/119010245/221044026-5b93aba1-9829-4ece-a357-26a6503f85bb.png)
+It was my task this week to complete the following user story and complete the acceptance criteria. I had to create a quiz about java script that was timed and every time a wrong answer was selected by the user the timer decreases by 10 seconds. At the end of the quiz you can enter your initials and save your score on the leader board. i have included i link to the deployed site and a image of what the site looks like.
+https://dovahkiin1993.github.io/quiz/
+![quiz pic](https://user-images.githubusercontent.com/119010245/221044026-5b93aba1-9829-4ece-a357-26a6503f85bb.png)
 
 ## User Story
 
