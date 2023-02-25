@@ -63,7 +63,7 @@ let questions = [
         count--;
         if (count < 0) {
             clearInterval(timerInterval);
-            localStorage.setItem('timer', );
+             localStorage.setItem('timer', count);
             return window.location.assign('end.html');
         }
     }, 1000);
